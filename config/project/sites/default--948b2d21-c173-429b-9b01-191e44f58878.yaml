@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: Craftcmsjosh
+primary: true
+siteGroup: 2e7ab967-34e0-4b6f-af75-e7f6356be2ed # Craftcmsjosh
+sortOrder: 1
