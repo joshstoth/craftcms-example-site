@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 2a9055aa-864d-4dde-9a63-8e26ab5837eb # Common
+handle: homepage_pages
+instructions: ''
+name: 'Homepage Pages'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '3'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:aa763393-7b53-4900-a28f-0c1b1e208261' # Pages
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

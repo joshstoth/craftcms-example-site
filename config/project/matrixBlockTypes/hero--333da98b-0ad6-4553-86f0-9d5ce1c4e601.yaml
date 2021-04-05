@@ -1,0 +1,120 @@
+field: 5ff451ea-2146-4946-9bb5-7574ebeefac4 # Hero
+fieldLayouts:
+  e68306dd-cbf4-4fe9-8dec-9023b61383f0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 15b9e394-8fc4-41b1-89fa-0cdbcbc4b0db # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 353118b7-457f-43b5-b137-e3ca6131e743 # Introduction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 27fc9c9c-cefb-44d2-9492-0aa0431acdac # Link Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 515a9fe9-a3f7-4dc1-b7b4-1854d0d7f067 # Link Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  15b9e394-8fc4-41b1-89fa-0cdbcbc4b0db: # Title
+    contentColumnType: text
+    fieldGroup: null
+    handle: hero_title
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  27fc9c9c-cefb-44d2-9492-0aa0431acdac: # Link Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: hero_link_text
+    instructions: ''
+    name: 'Link Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  515a9fe9-a3f7-4dc1-b7b4-1854d0d7f067: # Link Button
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: hero_link_button
+    instructions: ''
+    name: 'Link Button'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  353118b7-457f-43b5-b137-e3ca6131e743: # Introduction
+    contentColumnType: text
+    fieldGroup: null
+    handle: hero_introduction
+    instructions: ''
+    name: Introduction
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: hero
+name: Hero
+sortOrder: 1

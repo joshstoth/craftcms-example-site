@@ -1,0 +1,28 @@
+{% extends "_layouts/base" %}
+
+{% block body %}
+
+    {# Nav #}
+    <header id="header" class="header">
+		<div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="menu">
+                        <li><a href="#">Navigation 1</a></li>
+                        <li><a href="#">Navigation 2</a></li>
+                        <li><a href="#">Navigation 3</a></li>
+                        <li class="image"><img src="/assets/images/header-image.png" /></li>
+                        <li><a href="#">Navigation 4</a></li>
+                        <li><a href="#">Navigation 5</a></li>
+                        <li><a href="#">Navigation 6</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+
+	<main id="main" class="main" role="main">
+		{% block main %}{% endblock %}
+	</main>
+
+{% endblock %}

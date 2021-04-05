@@ -1,0 +1,60 @@
+.card {
+    border: none;
+    overflow: hidden;
+
+    &.home {
+        .image {
+            overflow: hidden;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            @extend .image-trans;
+        }
+
+        h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+    
+        p {
+            color: $blue;
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &:hover, &:focus {
+            @extend .image-trans;
+            .image {
+                background-size: 110%;
+                @extend .image-trans;
+            }
+        }
+    }
+
+    a {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+        }
+
+        &:hover, &:focus {
+            &:after {
+                background-color: transparent !important;
+                opacity: 0 !important;
+            }
+
+            text-decoration: underline !important;
+
+            .image {
+                transform: scaleX(1.5);
+            }
+        }
+    }
+}

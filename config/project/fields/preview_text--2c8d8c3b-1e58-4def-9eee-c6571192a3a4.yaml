@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 2a9055aa-864d-4dde-9a63-8e26ab5837eb # Common
+handle: preview_text
+instructions: ''
+name: 'Preview Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

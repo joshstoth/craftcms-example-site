@@ -1,0 +1,20 @@
+contentColumnType: string
+fieldGroup: 2a9055aa-864d-4dde-9a63-8e26ab5837eb # Common
+handle: featured_grid
+instructions: ''
+name: 'Featured Grid'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

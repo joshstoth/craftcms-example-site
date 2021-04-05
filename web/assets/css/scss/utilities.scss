@@ -1,0 +1,168 @@
+//colors
+$white:         #FFFFFF;
+$blue:          #061e58;
+$yellow:        #ffb000;
+$grey:          #797f8c;
+$light-blue:    #eff5ff;
+$inactive:      #dbdbdb;
+
+// Typography
+
+:root {
+    font-size: 62.5%;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+}
+
+p {
+    margin-bottom: 0.1rem;
+    font-size: 1.6rem;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $white;
+} 
+
+h1, .h1 {
+    margin-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500; 
+    color: $white;
+    font-size: 5.5rem;
+}
+
+h2, .h2 {
+    margin-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
+    font-size: 2.6rem;
+}
+
+
+h3, .h3 {
+    margin-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
+    font-size: 3rem;
+    color: $blue;
+}
+
+h5, .h5 {
+    font-size: 1.6rem;
+    margin-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.intro {
+    color: $white;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.vis-hidden {
+    visibility: hidden;
+}
+
+.link {
+    //position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $white;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        @extend .trans-1;
+    }
+
+    &:hover, &:focus {
+        text-decoration: none !important;
+
+        &:after {
+            opacity: 1;
+            @extend .trans-1;
+        }
+    }
+
+    &--white {
+        color: $white;
+
+        &:after {
+            background-color: $white !important;
+        }
+
+        &:hover, &:focus {
+            color: $white;
+        }
+    }
+
+    &--blue {
+        color: $blue;
+
+        &:after {
+            background-color: $blue !important;
+        }
+
+        &:hover, &:focus {
+            color: $blue;
+        }
+    }
+
+    &--lrg { 
+        font-size: 1.8rem;
+    }
+
+    &--sml {
+        font-size: 1.4rem;
+    }
+
+    &--relative {
+        position: relative;
+        width: max-content;
+    }
+}
+
+
+// Animation
+.trans-1 {
+    -webkit-transition: all 300ms cubic-bezier(0,.1,.33,.99) 0ms;
+    -moz-transition: all 300ms cubic-bezier(0,.1,.33,.99) 0ms;
+    -ms-transition: all 300ms cubic-bezier(0,.1,.33,.99) 0ms;
+    -o-transition: all 300ms cubic-bezier(0,.1,.33,.99) 0ms;
+    transition: all 300ms cubic-bezier(0,.1,.33,.99) 0ms;
+}
+
+.image-trans {
+    transition: background-size 150ms ease-in;
+    -moz-transition: background-size 150ms ease-in;
+    -web-kit-transition: background-size 150ms ease-in
+}
+
+//bootstrap
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1500px;
+    }
+}
